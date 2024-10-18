@@ -1,5 +1,6 @@
 import { useState } from "react";
 import ghost from "./assets/ghost/ghost1.svg";
+import { Eyes1 } from "assets/eyes";
 
 const App: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -39,6 +40,7 @@ const App: React.FC = () => {
                 </button>
               </button>
               <h3 className="text-2xl font-bold mb-4 text-center">모달</h3>
+              <Eyes1 />
               <img src={ghost} alt="Ghost" className="w-32 h-32 mx-auto" />
               <p className="mt-4 text-center">모달</p>
             </div>
