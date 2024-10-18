@@ -1,14 +1,12 @@
-import { useState } from "react";
-import ghost from "assets/ghost/ghost1.svg"
+import ghost from "assets/ghost/ghost1.svg";
 import { Ghost1 } from "assets/ghost";
 
-const ExampleUi: React.FC = () => {
-  const [isOpen, setIsOpen] = useState(false);
+interface ModalProps {
+  toggle: () => void; // toggle 함수는 반환 값이 없는 함수
+  isOpen: boolean;
+}
 
-  const toggle = () => {
-    setIsOpen(!isOpen);
-  };
-
+const ExampleUi: React.FC<ModalProps> = ({ toggle, isOpen }) => {
   return (
     <div className="min-h-screen flex flex-col">
       <header className="bg-blue-500 text-white p-4">

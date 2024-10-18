@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
-import ExampleUi from "pages/example/ExampleUi";
+import ExampleContainer from "pages/example/ExampleContainer";
 
 const App: React.FC = () => {
   return (
     <Routes>
-      <Route path="/" element={<ExampleUi />} />
+      <Route path="/" element={<ExampleContainer />} />
     </Routes>
   );
 };
