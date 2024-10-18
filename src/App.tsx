@@ -1,6 +1,5 @@
 import { useState } from "react";
 import ghost from "./assets/ghost/ghost1.svg";
-import { Eyes1 } from "assets/eyes";
 import { Ghost1 } from "assets/ghost";
 
 const App: React.FC = () => {
@@ -46,11 +45,14 @@ const App: React.FC = () => {
               || className = "w-32 h-32 text-red-500"
               */}
               <Ghost1
+                aria-label="ghost1 image"
+                role="img"
                 className="w-32 h-32 mx-auto text-blue-500"
                 style={{
                   filter: "drop-shadow(0px 2px 2px rgba(0, 0, 0, 0.5))",
                 }}
               />
+              {/* 경로로 이미지 가져올 시 변경 불가 */}
               <img src={ghost} alt="Ghost" className="w-32 h-32 mx-auto" />
               <p className="mt-4 text-center">모달</p>
             </div>
