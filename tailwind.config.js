@@ -19,6 +19,9 @@ export default {
         800: "#d01d1e",
         900: "#b60a15",
       },
+      blue: {
+        500: "#2196F3",
+      },
       purple: {
         50: "#f1edfc",
         100: "#dbd3f8",
@@ -31,6 +34,7 @@ export default {
         800: "#5c50ce",
         900: "#4844bf",
       },
+      black: "#000",
       gold: "#FFB836",
       silver: "#D6CFC7",
       bronze: "#D69888",
