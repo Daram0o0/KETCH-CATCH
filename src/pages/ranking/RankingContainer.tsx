@@ -84,7 +84,12 @@ const rankingChart = [
 ];
 
 const RankingContainer = () => {
-  return <RankingUi rankingChart={rankingChart} />;
+  const customOrder = [2, 1, 3];
+  const topThree = rankingChart
+    .filter((player) => customOrder.includes(player.rank))
+    .sort((a, b) => customOrder.indexOf(a.rank) - customOrder.indexOf(b.rank));
+
+  return <RankingUi rankingChart={rankingChart} topThree={topThree} />;
 };
 
 export default RankingContainer;
