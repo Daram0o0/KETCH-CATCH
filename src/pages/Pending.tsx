@@ -20,12 +20,13 @@ const Pending = () => {
       <header className="p-2 text-lg font-bold text-white self-start">
         {":P"}
       </header>
-      <div className="flex flex-row justify-center gap-6">
+      {/* 위에서 떨어트리려면 여기 디브 태그 mt-6 수정하면 댐*/}
+      <div className="flex flex-row justify-center gap-6 mt-4">
         {/*유저 그룹 1번 */}
-        <div className="flex flex-col gap-4 justify-center">
+        <div className="flex flex-col gap-4 ">
           {usersGroup1.map((user) => (
             <section key={user.id} className="flex-shrink-0 flex-grow-0 m-2">
-              <article className="w-72 h-24 bg-[#BAAFDA] rounded-lg border-2 border-[#FBE6E6] p-2 flex items-center">
+              <article className="w-72 h-28 bg-[#BAAFDA] rounded-lg border-2 border-[#FBE6E6] p-2 flex items-center">
                 <div
                   className="flex-grow basis-1/3 h-full bg-white rounded-full flex items-center justify-center"
                   aria-label="Profile Picture"
@@ -33,10 +34,10 @@ const Pending = () => {
                   {"아이콘"}
                 </div>
                 <div className="flex flex-grow basis-2/3 flex-col justify-center p-2 text-sm">
-                  <h1 className="font-bold rounded-md border-2 border-[#494271] bg-white text-center m-1">
+                  <h1 className="font-bold rounded-md border-2 border-[#494271] bg-white text-center m-1 p-1">
                     {user.name}
                   </h1>
-                  <p className="rounded-sm border-2 border-dashed border-[#494271] bg-white text-center m-1">
+                  <p className="rounded-sm border-2 border-dashed border-[#494271] bg-white text-center m-1 p-1">
                     {user.score}
                   </p>
                 </div>
@@ -45,8 +46,8 @@ const Pending = () => {
           ))}
         </div>
         {/* 캔버스 영역 */}
-        <section className="w-[720px] h-[540px] rounded-md border-2 bg-[#A4A0B8] border-[#494271]">
-          {/* 헤더 영역 */}
+        <section className="w-[700px] rounded-md border-2 bg-[#A4A0B8] border-[#494271]">
+          {/* 헤더 영역-컴포넌트 */}
           <header className="h-12 p-2 flex items-center justify-between relative">
             {/* 초대코드 영역 */}
             <div className="w-24 bg-[#D9D9D9] rounded-md border-2 border-gray-50 flex justify-center items-center">
@@ -55,7 +56,7 @@ const Pending = () => {
               <span className="text-sm ml-2">📋</span>
             </div>
             {/* 참가 인원 정보 */}
-            <span className="text-sm absolute left-1/2 transform -translate-x-1/2">
+            <span className="text-base absolute font-bold left-1/2 transform -translate-x-1/2">
               1/8
             </span>
             {/* 설정 버튼 */}
@@ -67,24 +68,24 @@ const Pending = () => {
           {/* 그림판 영역 */}
           <main>
             <section className="m-1 h-[420px] rounded-md bg-white box-border">
-              {"그림판"}
+              {"그림판- 컴포넌트"}
             </section>
             <section className="flex flex-col gap-3 p-1">
-              <div className=" bg-gray-400 rounded-sm h-16 -mt-3 border-2 border-violet-600">
-                {"캔버스 선택 도구 들어감"}
+              <div className=" bg-gray-400 rounded-sm h-16 -mt-8 border-2 border-violet-600">
+                {"캔버스 선택 도구 들어감 - 컴포넌트 "}
               </div>
               {/* 채팅창 영역 */}
               <div className="bg-white rounded-md h-52 overflow-auto">
-                <span>{"채팅 메세지"}</span>
+                <span>{"채팅 메세지 - 컴포넌트 "}</span>
               </div>
             </section>
           </main>
         </section>
         {/*유저 그룹 2번 */}
-        <div className="flex flex-col gap-4 justify-center">
+        <div className="flex flex-col gap-4">
           {usersGroup2.map((user) => (
             <section key={user.id} className="flex-shrink-0 flex-grow-0 m-2">
-              <article className="w-72 h-24 bg-[#BAAFDA] rounded-lg border-2 border-[#FBE6E6] p-2 flex items-center">
+              <article className="w-72 h-28 bg-[#BAAFDA] rounded-lg border-2 border-[#FBE6E6] p-2 flex items-center">
                 <div
                   className="flex-grow basis-1/3 h-full bg-white rounded-full flex items-center justify-center"
                   aria-label="Profile Picture"
@@ -92,10 +93,10 @@ const Pending = () => {
                   {"아이콘"}
                 </div>
                 <div className="flex flex-grow basis-2/3 flex-col justify-center p-2 text-sm">
-                  <h1 className="font-bold rounded-md border-2 border-[#494271] bg-white text-center m-1">
+                  <h1 className="font-bold rounded-md border-2 border-[#494271] bg-white text-center m-1 p-1">
                     {user.name}
                   </h1>
-                  <p className="rounded-sm border-2 border-dashed border-[#494271] bg-white text-center m-1">
+                  <p className="rounded-sm border-2 border-dashed border-[#494271] bg-white text-center m-1 p-1">
                     {user.score}
                   </p>
                 </div>
