@@ -1,3 +1,5 @@
+import { transform } from "typescript";
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -56,9 +58,25 @@ export default {
           "0%": { transform: "translateY(0)", opacity: "1" },
           "100%": { transform: "translateY(50px)", opacity: "0" },
         },
+        ghostMove: {
+          "0%": { transform: "translate(-200%, 0%)" },
+          "25%": { transform: "translate(-100%, 70%)" },
+          "50%": { transform: "translate(0%, 0%)" },
+          "75%": { transform: "translate(100%, 70%)" },
+          "100%": { transform: "translate(200%, 0%)" },
+        },
+        colorChange: {
+          "0%": { fill: "#FF8969" },
+          "25%": { fill: "#FFBF69" },
+          "50%": { fill: "#FFE569" },
+          "75%": { fill: "#69FFB3" },
+          "100%": { fill: "#69C8FF" },
+        },
       },
       animation: {
         tear: "tearDrop 1.5s ease-in-out infinite",
+        loading:
+          "ghostMove 6s ease-in-out infinite,colorChange 8s ease-in-out infinite",
       },
     },
     plugins: [],
