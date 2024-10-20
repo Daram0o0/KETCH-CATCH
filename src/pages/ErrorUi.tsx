@@ -6,7 +6,7 @@ const ErrorUi = () => {
   return (
     <div className="flex h-screen flex-col bg-main">
       <p className="p-4 text-xl font-bold text-white">{":P"}</p>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-grow flex-col items-center justify-center">
         <div className="w-48 h-48 relative drop-shadow-2xl">
           {/* 유령색상 random컬러 적용하거나 status값에 1:1매칭되게 들어오면 좋을 것 같아 svg색을 제거해 둠 */}
           <GhostMini className="w-48 h-48" style={{ fill: "#fff" }} />
