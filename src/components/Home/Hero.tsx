@@ -1,12 +1,12 @@
 import React from "react";
 import Ghost from "assets/ghost/ghost-main.svg";
-import KetchCatch from "assets/logo.svg";
+import KetchCatch from "assets/logo/logo.svg";
 import polygonMakeRoom from "assets/button/polygon.svg";
 import polygonJoinRandomRoom from "assets/button/polygon-reverse.svg";
 
 const Hero: React.FC = () => {
   return (
-    <section className="flex flex-col md:flex-row items-center justify-center text-center px-16 py-16 max-w-screen-xl mx-auto">
+    <section className="flex flex-col bg-main md:flex-row items-center justify-center text-center px-16 py-16 max-w-screen-xl mx-auto">
       {/* 메인 캐릭터 */}
       <div className="w-80 h-80 rounded-full flex items-center justify-center mb-8 md:mb-0">
         <img src={Ghost} alt="ghost" className="w-18 h-18" />
