@@ -51,6 +51,15 @@ export default {
         silver: "#D6CFC7",
         bronze: "#D69888",
       },
+      keyframes: {
+        tearDrop: {
+          "0%": { transform: "translateY(0)", opacity: "1" },
+          "100%": { transform: "translateY(50px)", opacity: "0" },
+        },
+      },
+      animation: {
+        tear: "tearDrop 1.5s ease-in-out infinite",
+      },
     },
     plugins: [],
   },

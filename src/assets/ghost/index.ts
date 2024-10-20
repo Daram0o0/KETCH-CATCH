@@ -7,4 +7,16 @@ import Ghost6 from "./ghost6.svg?react";
 import Ghost7 from "./ghost7.svg?react";
 import Ghost8 from "./ghost8.svg?react";
 
-export { Ghost1, Ghost2, Ghost3, Ghost4, Ghost5, Ghost6, Ghost7, Ghost8 };
+import GhostMini from "./ghost-mini.svg?react";
+
+export {
+  Ghost1,
+  Ghost2,
+  Ghost3,
+  Ghost4,
+  Ghost5,
+  Ghost6,
+  Ghost7,
+  Ghost8,
+  GhostMini,
+};
