@@ -8,3 +8,12 @@ import Eyes7 from "./eyes7.svg?react";
 import Eyes8 from "./eyes8.svg?react";
 
 export { Eyes1, Eyes2, Eyes3, Eyes4, Eyes5, Eyes6, Eyes7, Eyes8 };
+// 1: > <(big size)
+// 2: O 0
+// 3: @ @
+// 4: D D
+// 5: @-@
+// 6: ^ ^
+// 7: > <(small size)
+// 8: ^ ^
+//    0 0
