@@ -59,12 +59,26 @@ export default {
           "100%": { transform: "translateY(50px)", opacity: "0" },
         },
         ghostMove: {
-          "0%": { transform: "translate(-200%, 0%)" },
-          "25%": { transform: "translate(-100%, 70%)" },
-          "50%": { transform: "translate(0%, 0%)" },
-          "75%": { transform: "translate(100%, 70%)" },
-          "100%": { transform: "translate(200%, 0%)" },
+          "0%": { transform: "translate(-200%, 0%)", easing: "ease-in-out" },
+          "12.5%": {
+            transform: "translate(-150%, -30%)",
+            easing: "ease-in-out",
+          },
+          "25%": { transform: "translate(-100%, 30%)", easing: "ease-in-out" },
+          "37.5%": {
+            transform: "translate(-50%, -30%)",
+            easing: "ease-in-out",
+          },
+          "50%": { transform: "translate(0%, 30%)", easing: "ease-in-out" },
+          "62.5%": { transform: "translate(50%, -30%)", easing: "ease-in-out" },
+          "75%": { transform: "translate(100%, 30%)", easing: "ease-in-out" },
+          "87.5%": {
+            transform: "translate(150%, -30%)",
+            easing: "ease-in-out",
+          },
+          "100%": { transform: "translate(200%, 30%)", easing: "ease-in-out" },
         },
+
         colorChange: {
           "0%": { fill: "#FF8969" },
           "25%": { fill: "#FFBF69" },
