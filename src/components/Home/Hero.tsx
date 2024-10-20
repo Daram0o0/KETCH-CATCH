@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
           className="w-96 h-auto mb-4"
           alt="KetchCatch Logo"
         />
-        <p className="max-w-md text-sm font-semibold py-6 mb-6">
+        <p className="w-96 text-sm font-semibold py-6 mb-6">
           대충 이런게임인데 일단 아무거나 다 쳐둬야지 이름도 아무거나로 할건가요
           재밌겠구만 쨋든 뭔가 문구가 이렇게 들어가길 바라는데 어쩌징 뭔가
           이쁘게 만들고싶은데 맘대로 안되네요 짜증나구만 일단 할거니까 맘에
