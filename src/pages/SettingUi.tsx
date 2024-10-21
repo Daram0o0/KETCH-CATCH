@@ -1,3 +1,5 @@
+import ToggleSwitch from "components/button/ToggleSwitch";
+
 const SettingUi = () => {
   return (
     <div className="flex flex-col h-screen bg-main">
@@ -56,7 +58,7 @@ const SettingUi = () => {
             {/* 힌트 ON/OFF - 토글 제작해야 함 */}
             <div className="flex justify-between items-center">
               <label className="text-sm">힌트 ON/OFF</label>
-              <input type="checkbox" className="rounded-full" />
+              <ToggleSwitch />
             </div>
           </div>
 
