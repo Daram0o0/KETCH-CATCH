@@ -1,4 +1,10 @@
+import ToggleSwitch from "components/button/ToggleSwitch";
+import { useState } from "react";
+
 const SettingUi = () => {
+  const [password, setPassword] = useState(false);
+  const [hint, setHint] = useState(false);
+
   return (
     <div className="flex flex-col h-screen bg-main">
       <p className="p-4 text-xl font-bold text-white">:P</p>
@@ -44,19 +50,30 @@ const SettingUi = () => {
               </select>
             </div>
 
-            {/* 비밀번호 입력 */}
+            {/* 비밀번호 ON/OFF */}
             <div className="flex justify-between items-center">
-              <label className="text-sm">비밀번호 입력</label>
-              <input
-                type="password"
-                className="w-64 border border-violet-200 focus:border-violet-300 rounded px-2 py-1 text-right"
+              <label className="text-sm">비밀번호 ON/OFF</label>
+              <ToggleSwitch
+                isChecked={password}
+                onToggle={() => setPassword(!password)}
               />
             </div>
 
-            {/* 힌트 ON/OFF - 토글 제작해야 함 */}
+            {/* 비밀번호 입력 */}
+            {password && (
+              <div className="flex justify-between items-center">
+                <label className="text-sm">비밀번호 입력</label>
+                <input
+                  type="password"
+                  className="w-64 border border-violet-200 focus:border-violet-300 rounded px-2 py-1 text-right"
+                />
+              </div>
+            )}
+
+            {/* 힌트 ON/OFF */}
             <div className="flex justify-between items-center">
               <label className="text-sm">힌트 ON/OFF</label>
-              <input type="checkbox" className="rounded-full" />
+              <ToggleSwitch isChecked={hint} onToggle={() => setHint(!hint)} />
             </div>
           </div>
 
